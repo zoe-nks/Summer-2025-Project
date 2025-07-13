@@ -121,7 +121,6 @@ script = ExtResource("1_g2els")
 sprite_frames = SubResource("SpriteFrames_3v2ag")
 animation = &"idle (also using for walking temp)"
 autoplay = "idle (also using for walking temp)"
-frame_progress = 0.609436
 
 =======
 >>>>>>> Stashed changes

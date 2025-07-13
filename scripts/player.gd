@@ -1,11 +1,7 @@
 extends CharacterBody2D
 
-
-<<<<<<< Updated upstream
-const SPEED = 300.0
-=======
 const SPEED = 100.0
->>>>>>> Stashed changes
+
 
 func _physics_process(_delta):
 	var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
