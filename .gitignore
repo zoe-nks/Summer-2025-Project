@@ -1,3 +1,9 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+scripts/player.gd
+scenes/player.tscn
+scenes/museum-outdoor.tscn
+assets/light-grass.png.import
+assets/idlespritesheet.PNG.import
+assets/cursor3.png.import

@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbile12w3whtj"]
+
+[ext_resource type="Script" uid="uid://bnrjd66nk2vkf" path="res://scripts/worldtilemap.gd" id="1_supso"]
+
+[node name="dual-grid" type="Node2D"]
+
+[node name="worldtilemap" type="TileMap" parent="."]
+format = 2
+script = ExtResource("1_supso")
+
+[node name="displaytilemap" type="TileMap" parent="."]
+format = 2

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://csns3i1tinsov"
-path="res://.godot/imported/Idle.png-674ba2962c4bf6a4c803f6d7028ab62e.ctex"
+uid="uid://bcg3nm027xwog"
+path="res://.godot/imported/light-grass.png-be981f63ce07527346148462913ef804.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/temp cat pack/Idle.png"
-dest_files=["res://.godot/imported/Idle.png-674ba2962c4bf6a4c803f6d7028ab62e.ctex"]
+source_file="res://assets/light-grass.png"
+dest_files=["res://.godot/imported/light-grass.png-be981f63ce07527346148462913ef804.ctex"]
 
 [params]
 

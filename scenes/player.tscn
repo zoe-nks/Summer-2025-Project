@@ -1,54 +1,70 @@
-[gd_scene load_steps=15 format=3 uid="uid://cb2ccwfb5snha"]
+[gd_scene load_steps=19 format=3 uid="uid://cb2ccwfb5snha"]
 
-[ext_resource type="Texture2D" uid="uid://csns3i1tinsov" path="res://assets/temp cat pack/Idle.png" id="1_3vyb7"]
 [ext_resource type="Script" uid="uid://dyp4afq33lf7h" path="res://scripts/player.gd" id="1_g2els"]
+[ext_resource type="Texture2D" uid="uid://duq13v31a0cqf" path="res://assets/idlespritesheet.PNG" id="2_g2els"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_g2els"]
-atlas = ExtResource("1_3vyb7")
-region = Rect2(0, 0, 32, 32)
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g2els"]
+height = 42.0
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qhqgy"]
-atlas = ExtResource("1_3vyb7")
-region = Rect2(32, 0, 32, 32)
+atlas = ExtResource("2_g2els")
+region = Rect2(7, 6, 41, 44)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_dqkch"]
-atlas = ExtResource("1_3vyb7")
-region = Rect2(64, 0, 32, 32)
+atlas = ExtResource("2_g2els")
+region = Rect2(57, 6, 41, 44)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_qlg0r"]
-atlas = ExtResource("1_3vyb7")
-region = Rect2(96, 0, 32, 32)
+atlas = ExtResource("2_g2els")
+region = Rect2(107, 6, 41, 44)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_tuyoq"]
-atlas = ExtResource("1_3vyb7")
-region = Rect2(128, 0, 32, 32)
+atlas = ExtResource("2_g2els")
+region = Rect2(157, 6, 41, 44)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_fjrip"]
-atlas = ExtResource("1_3vyb7")
-region = Rect2(160, 0, 32, 32)
+atlas = ExtResource("2_g2els")
+region = Rect2(207, 6, 41, 44)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_smehm"]
-atlas = ExtResource("1_3vyb7")
-region = Rect2(192, 0, 32, 32)
+atlas = ExtResource("2_g2els")
+region = Rect2(257, 6, 41, 44)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_ur7pv"]
-atlas = ExtResource("1_3vyb7")
-region = Rect2(224, 0, 32, 32)
+atlas = ExtResource("2_g2els")
+region = Rect2(307, 6, 41, 44)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_y4r1p"]
-atlas = ExtResource("1_3vyb7")
-region = Rect2(256, 0, 32, 32)
+atlas = ExtResource("2_g2els")
+region = Rect2(357, 6, 41, 44)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d2wvv"]
-atlas = ExtResource("1_3vyb7")
-region = Rect2(288, 0, 32, 32)
+atlas = ExtResource("2_g2els")
+region = Rect2(407, 6, 41, 44)
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_3v2ag"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_3v2ag"]
+atlas = ExtResource("2_g2els")
+region = Rect2(457, 6, 41, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jej6c"]
+atlas = ExtResource("2_g2els")
+region = Rect2(507, 6, 41, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f1ej7"]
+atlas = ExtResource("2_g2els")
+region = Rect2(557, 6, 41, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oprun"]
+atlas = ExtResource("2_g2els")
+region = Rect2(607, 6, 41, 44)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a8ls1"]
+atlas = ExtResource("2_g2els")
+region = Rect2(657, 6, 41, 44)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qfm1y"]
 animations = [{
 "frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_g2els")
-}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_qhqgy")
 }, {
@@ -75,24 +91,48 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_d2wvv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3v2ag")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jej6c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f1ej7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oprun")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a8ls1")
 }],
 "loop": true,
-"name": &"idle (also using for walking temp)",
+"name": &"default",
 "speed": 10.0
 }]
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_g2els"]
 
 [node name="Player" type="CharacterBody2D"]
 motion_mode = 1
 script = ExtResource("1_g2els")
 
+<<<<<<< Updated upstream
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_3v2ag")
 animation = &"idle (also using for walking temp)"
 autoplay = "idle (also using for walking temp)"
 frame_progress = 0.609436
 
+=======
+>>>>>>> Stashed changes
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-5, 5)
-shape = SubResource("CircleShape2D_g2els")
+shape = SubResource("CapsuleShape2D_g2els")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(4, 4)
+position_smoothing_enabled = true
+
+[node name="idle-animated" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_qfm1y")
+autoplay = "default"
+frame_progress = 0.612396
