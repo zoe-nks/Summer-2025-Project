@@ -122,7 +122,6 @@ sprite_frames = SubResource("SpriteFrames_3v2ag")
 animation = &"idle (also using for walking temp)"
 autoplay = "idle (also using for walking temp)"
 
-=======
 >>>>>>> Stashed changes
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_g2els")
