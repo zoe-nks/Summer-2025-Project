@@ -14,6 +14,10 @@ config/name="Summer 2025 Game Project"
 run/main_scene="uid://betr5d3jkftvq"
 config/features=PackedStringArray("4.4", "Forward Plus")
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/TileMapDual/plugin.cfg")
+
 [input]
 
 move_up={
