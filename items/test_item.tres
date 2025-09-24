@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemData" load_steps=2 format=3 uid="uid://dse7sncwsmbg5"]
+
+[ext_resource type="Script" uid="uid://u0vvvxbbyga1" path="res://items/item_data.gd" id="1_j6h3p"]
+
+[resource]
+script = ExtResource("1_j6h3p")
+type = 0
+name = "tester bone"
+description = "this is a dino bone!
+"

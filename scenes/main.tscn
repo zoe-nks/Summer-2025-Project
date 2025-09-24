@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://betr5d3jkftvq"]
+[gd_scene load_steps=6 format=3 uid="uid://betr5d3jkftvq"]
 
 [ext_resource type="Script" uid="uid://qfl3ewrxcsa3" path="res://scripts/custom_cursor.gd" id="1_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://bjr7n5tqshmer" path="res://scenes/player.tscn" id="1_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://cushpre7ymoqg" path="res://scenes/museum-outdoor.tscn" id="1_sugp2"]
 [ext_resource type="Texture2D" uid="uid://hchl5tda8m3x" path="res://assets/cursor3.png" id="3_sugp2"]
+[ext_resource type="Script" uid="uid://cs6no0hf21yyj" path="res://scenes/gui.gd" id="5_tbgi4"]
 
 [node name="main" type="Node2D"]
 
@@ -20,3 +21,6 @@ offset_bottom = 40.0
 mouse_filter = 2
 texture = ExtResource("3_sugp2")
 stretch_mode = 2
+
+[node name="GUI" type="CanvasLayer" parent="."]
+script = ExtResource("5_tbgi4")
